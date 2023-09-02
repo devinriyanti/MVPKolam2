@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/itemRumah"
+        android:icon="@drawable/baseline_home_24"
+        android:title="Beranda"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/itemPembelian"
+        android:icon="@drawable/baseline_assignment_24"
+        android:title="Pembelian"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/itemKeranjang"
+        android:icon="@drawable/baseline_shopping_cart_24"
+        android:title="Keranjang"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/itemDataDiri"
+        android:icon="@drawable/baseline_person_24"
+        android:title="Data Diri"
+        app:showAsAction="always" />
+</menu>

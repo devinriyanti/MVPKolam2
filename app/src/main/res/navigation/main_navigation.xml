@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login_navigation"
+    app:startDestination="@id/itemRumah">
+
+    <fragment
+        android:id="@+id/itemRumah"
+        android:name="id.web.devin.mvckolam.view.HomeListFragment"
+        android:label="HomeListFragment"
+        tools:layout="@layout/fragment_home_list"/>
+    <fragment
+        android:id="@+id/itemPembelian"
+        android:name="id.web.devin.mvckolam.view.PembelianListFragment"
+        android:label="PembelianListFragment"
+        tools:layout="@layout/fragment_pembelian_list"/>
+    <fragment
+        android:id="@+id/itemPenjualan"
+        android:name="id.web.devin.mvckolam.view.PenjualanListFragment"
+        android:label="PenjualanListFragment"
+        tools:layout="@layout/fragment_penjualan_list"/>
+    <fragment
+        android:id="@+id/itemKeranjang"
+        android:name="id.web.devin.mvckolam.view.KeranjangListFragment"
+        android:label="KeranjangListFragment"
+        tools:layout="@layout/fragment_keranjang_list"/>
+    <fragment
+        android:id="@+id/itemDataDiri"
+        android:name="id.web.devin.mvckolam.view.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/actionProfilEditFragment"
+            app:destination="@id/profilEditFragment"
+            app:popUpTo="@id/profilEditFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/diterimaFragment"
+        android:name="id.web.devin.mvckolam.view.DiterimaFragment"
+        android:label="fragment_diterima"
+        tools:layout="@layout/fragment_diterima" />
+    <fragment
+        android:id="@+id/dibatalkanFragment"
+        android:name="id.web.devin.mvckolam.view.DibatalkanFragment"
+        android:label="fragment_dibatalkan"
+        tools:layout="@layout/fragment_dibatalkan" />
+    <fragment
+        android:id="@+id/dikirimFragment"
+        android:name="id.web.devin.mvckolam.view.DikirimFragment"
+        android:label="fragment_dikirim"
+        tools:layout="@layout/fragment_dikirim" />
+    <fragment
+        android:id="@+id/diprosesFragment"
+        android:name="id.web.devin.mvckolam.view.DiprosesFragment"
+        android:label="fragment_diproses"
+        tools:layout="@layout/fragment_diproses" />
+    <fragment
+        android:id="@+id/profilEditFragment"
+        android:name="id.web.devin.mvckolam.view.ProfilEditFragment"
+        android:label="fragment_profil_edit"
+        tools:layout="@layout/fragment_profil_edit" >
+        <action
+            android:id="@+id/actionItemDataDiri"
+            app:destination="@id/itemDataDiri"
+            app:popUpTo="@id/itemDataDiri"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>

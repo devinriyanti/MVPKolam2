@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">MVCKolam</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string-array name="jenisKelamin">
+        <item>Laki-Laki</item>
+        <item>Perempuan</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="sudah_punya_akun">Sudah punya akun?</string>
+    <string name="_08xxxxxxxxxx">08xxxxxxxxxx</string>
+    <string name="contoh_mail_com">contoh@mail.com</string>
+    <string name="nama_pengguna">Nama Pengguna</string>
+    <string name="daftar">Daftar</string>
+    <string name="kata_sandi">Kata Sandi</string>
+    <string name="nomor_telepon">Nomor Telepon</string>
+    <string name="email">Email</string>
+    <string name="nama">Nama</string>
+    <string name="masuk">Masuk</string>
+    <string name="registrasi_akun_bisnis">Registrasi Akun Bisnis</string>
+    <string name="konfirmasi_kata_sandi">Konfirmasi Kata Sandi</string>
+    <string name="registrasi_akun_pribadi">Registrasi Akun Pribadi</string>
+    <string name="pencarian">Pencarian</string>
+    <string name="DESKRIPSI" />
+    <string name="deskripsi">DESKRIPSI</string>
+</resources>

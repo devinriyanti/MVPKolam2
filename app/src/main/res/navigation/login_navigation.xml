@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="id.web.devin.mvckolam.view.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/actionDaftarSebagaiFragment"
+            app:destination="@id/daftarSebagaiFragment"
+            app:popUpTo="@id/daftarSebagaiFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/daftarSebagaiFragment"
+        android:name="id.web.devin.mvckolam.view.DaftarSebagaiFragment"
+        android:label="fragment_daftar_sebagai"
+        tools:layout="@layout/fragment_daftar_sebagai" >
+        <action
+            android:id="@+id/actionRegisPribadiFragment"
+            app:destination="@id/regisPribadiFragment"
+            app:popUpTo="@id/regisPribadiFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/actionRegisBisnisFragment"
+            app:destination="@id/regisBisnisFragment"
+            app:popUpTo="@id/regisBisnisFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/actionLoginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/regisPribadiFragment"
+        android:name="id.web.devin.mvckolam.view.RegisPribadiFragment"
+        android:label="fragment_regis_pribadi"
+        tools:layout="@layout/fragment_regis_pribadi" >
+        <action
+            android:id="@+id/actionRPLoginFragment"
+            app:destination="@id/loginFragment"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/actionRPDaftarSebagaiFragment"
+            app:destination="@id/daftarSebagaiFragment"
+            app:popUpTo="@id/daftarSebagaiFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/regisBisnisFragment"
+        android:name="id.web.devin.mvckolam.view.RegisBisnisFragment"
+        android:label="fragment_regis_bisnis"
+        tools:layout="@layout/fragment_regis_bisnis" >
+        <action
+            android:id="@+id/actionRBLoginFragment"
+            app:destination="@id/loginFragment"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/actionRBDaftarSebagaiFragment"
+            app:destination="@id/daftarSebagaiFragment"
+            app:popUpTo="@id/daftarSebagaiFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>
