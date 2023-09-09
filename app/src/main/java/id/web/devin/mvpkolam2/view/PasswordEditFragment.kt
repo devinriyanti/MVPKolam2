@@ -5,13 +5,13 @@ import android.os.Bundle
 import android.text.Layout
 import android.text.SpannableString
 import android.text.style.AlignmentSpan
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.fragment.app.Fragment
+import androidx.navigation.Navigation
 import androidx.navigation.fragment.findNavController
-import id.web.devin.mvpkolam2.R
 import id.web.devin.mvpkolam2.databinding.FragmentPasswordEditBinding
 import id.web.devin.mvpkolam2.model.Pengguna
 import id.web.devin.mvpkolam2.presenter.ProfilePresenter
@@ -82,6 +82,29 @@ class PasswordEditFragment : Fragment(), ProfilePresenterListener {
                     setPositiveButton("OK", null)
                     create().show()
                 }
+            }
+        }
+        b.btnBatalEditKataSandi.setOnClickListener {
+            AlertDialog.Builder(context).apply {
+                val title = SpannableString("Peringatan")
+                title.setSpan(AlignmentSpan.Standard(Layout.Alignment.ALIGN_CENTER), 0, title.length, 0)
+                val message = SpannableString("Batal Melakukan Perubahan?")
+                message.setSpan(
+                    AlignmentSpan.Standard(Layout.Alignment.ALIGN_CENTER),
+                    0,
+                    message.length,
+                    0
+                )
+                setTitle(title)
+                setMessage(message)
+                setPositiveButton("BATAL"){ dialog,_->
+                    val action = PasswordEditFragmentDirections.actionEditPwdToItemDataDiri()
+                    Navigation.findNavController(it).navigate(action)
+                }
+                setNegativeButton("TIDAK"){ dialog,_->
+                    dialog.dismiss()
+                }
+                create().show()
             }
         }
     }
