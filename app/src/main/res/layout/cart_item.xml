@@ -7,7 +7,6 @@
 
     <ImageView
         android:id="@+id/imgProdukCart"
-        tools:srcCompat="@tools:sample/avatars"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_marginStart="16dp"
@@ -16,7 +15,8 @@
         android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
 
     <TextView
         android:id="@+id/txtNamaProdukCart"
@@ -62,6 +62,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="4dp"
         android:layout_marginBottom="3dp"
+        android:text="1"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/imgProdukCart"
         app:layout_constraintEnd_toStartOf="@+id/imgTambah" />

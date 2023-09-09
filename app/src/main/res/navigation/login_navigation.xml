@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/loginFragment"
-        android:name="id.web.devin.mvckolam.view.LoginFragment"
+        android:name="id.web.devin.mvpkolam2.view.LoginFragment"
         android:label="fragment_login"
         tools:layout="@layout/fragment_login" >
         <action
@@ -18,14 +18,9 @@
     </fragment>
     <fragment
         android:id="@+id/daftarSebagaiFragment"
-        android:name="id.web.devin.mvckolam.view.DaftarSebagaiFragment"
+        android:name="id.web.devin.mvpkolam2.view.DaftarSebagaiFragment"
         android:label="fragment_daftar_sebagai"
         tools:layout="@layout/fragment_daftar_sebagai" >
-        <action
-            android:id="@+id/actionRegisPribadiFragment"
-            app:destination="@id/regisPribadiFragment"
-            app:popUpTo="@id/regisPribadiFragment"
-            app:popUpToInclusive="true" />
         <action
             android:id="@+id/actionRegisBisnisFragment"
             app:destination="@id/regisBisnisFragment"
@@ -34,10 +29,13 @@
         <action
             android:id="@+id/actionLoginFragment"
             app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/actionRegisPribadiFragment"
+            app:destination="@id/regisPribadiFragment" />
     </fragment>
     <fragment
         android:id="@+id/regisPribadiFragment"
-        android:name="id.web.devin.mvckolam.view.RegisPribadiFragment"
+        android:name="id.web.devin.mvpkolam2.view.RegisPribadiFragment"
         android:label="fragment_regis_pribadi"
         tools:layout="@layout/fragment_regis_pribadi" >
         <action
@@ -53,7 +51,7 @@
     </fragment>
     <fragment
         android:id="@+id/regisBisnisFragment"
-        android:name="id.web.devin.mvckolam.view.RegisBisnisFragment"
+        android:name="id.web.devin.mvpkolam2.view.RegisBisnisFragment"
         android:label="fragment_regis_bisnis"
         tools:layout="@layout/fragment_regis_bisnis" >
         <action

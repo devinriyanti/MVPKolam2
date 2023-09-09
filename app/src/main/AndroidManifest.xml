@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="id.web.devin.mvckolam">
+    package="id.web.devin.mvpkolam2">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
@@ -16,10 +16,10 @@
         android:theme="@style/Theme.MVCKolam"
         tools:targetApi="31">
         <activity
-            android:name=".PembelianDetailActivity"
+            android:name=".view.PembelianDetailActivity"
             android:exported="false" />
         <activity
-            android:name=".CheckoutActivity"
+            android:name=".view.CheckoutActivity"
             android:exported="false" />
         <activity
             android:name=".view.KolamDetailActivity"
@@ -27,7 +27,7 @@
 
         <provider
             android:name="androidx.core.content.FileProvider"
-            android:authorities="id.web.devin.mvcmkolam"
+            android:authorities="id.web.devin.mvpkolam2"
             android:exported="false"
             android:grantUriPermissions="true">
             <meta-data

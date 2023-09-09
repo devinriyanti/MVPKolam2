@@ -5,12 +5,12 @@ plugins {
 }
 
 android {
-    namespace 'id.web.devin.mvckolam'
+    namespace 'id.web.devin.mvpkolam2'
     compileSdk 33
     apply plugin: "androidx.navigation.safeargs.kotlin"
 
     defaultConfig {
-        applicationId "id.web.devin.mvckolam"
+        applicationId "id.web.devin.mvpkolam2"
         minSdk 26
         targetSdk 33
         versionCode 1

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/purchase_detail_navigation"
+    app:startDestination="@id/pembelianDetailFragment">
+
+    <fragment
+        android:id="@+id/pembelianDetailFragment"
+        android:name="id.web.devin.mvpkolam2.view.PembelianDetailFragment"
+        android:label="fragment_pembelian_detail"
+        tools:layout="@layout/fragment_pembelian_detail" >
+        <action
+            android:id="@+id/actionToBuktiPembayaranFragment"
+            app:destination="@id/buktiPembayaranFragment"
+            app:popUpTo="@id/buktiPembayaranFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/actionToPembayaranFragment"
+            app:destination="@id/pembayaranFragment2"
+            app:popUpTo="@id/pembayaranFragment2"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/buktiPembayaranFragment"
+        android:name="id.web.devin.mvpkolam2.view.BuktiPembayaranFragment"
+        android:label="fragment_bukti_pembayaran"
+        tools:layout="@layout/fragment_bukti_pembayaran" >
+        <action
+            android:id="@+id/actionToPembelianDetailFragment"
+            app:destination="@id/pembelianDetailFragment"
+            app:popUpTo="@id/pembelianDetailFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/pembayaranWaitFragment2"
+        android:name="id.web.devin.mvpkolam2.view.PembayaranWaitFragment"
+        android:label="fragment_pembayaran_wait"
+        tools:layout="@layout/fragment_pembayaran_wait" />
+    <fragment
+        android:id="@+id/pembayaranFragment2"
+        android:name="id.web.devin.mvpkolam2.view.PembayaranFragment"
+        android:label="fragment_pembayaran"
+        tools:layout="@layout/fragment_pembayaran" >
+        <action
+            android:id="@+id/actionPembayaranWaitFragment"
+            app:destination="@id/pembayaranWaitFragment2"
+            app:popUpTo="@id/pembayaranWaitFragment2"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>

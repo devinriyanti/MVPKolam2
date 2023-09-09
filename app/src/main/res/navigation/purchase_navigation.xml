@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/purchase_navigation"
+    app:startDestination="@id/checkoutFragment">
+
+    <fragment
+        android:id="@+id/checkoutFragment"
+        android:name="id.web.devin.mvpkolam2.view.CheckoutFragment"
+        android:label="fragment_checkout"
+        tools:layout="@layout/fragment_checkout" >
+        <action
+            android:id="@+id/actionPembayaranFragment"
+            app:destination="@id/pembayaranFragment"
+            app:popUpTo="@id/pembayaranFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/pembayaranFragment"
+        android:name="id.web.devin.mvpkolam2.view.PembayaranFragment"
+        android:label="fragment_pembayaran"
+        tools:layout="@layout/fragment_pembayaran" >
+        <action
+            android:id="@+id/actionPembayaranWaitFragment"
+            app:destination="@id/pembayaranWaitFragment"
+            app:popUpTo="@id/pembayaranWaitFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/pembayaranWaitFragment"
+        android:name="id.web.devin.mvpkolam2.view.PembayaranWaitFragment"
+        android:label="fragment_pembayaran_wait"
+        tools:layout="@layout/fragment_pembayaran_wait" >
+        <argument
+            android:name="tempoBayar"
+            app:argType="string"
+            android:defaultValue='""' />
+    </fragment>
+</navigation>
